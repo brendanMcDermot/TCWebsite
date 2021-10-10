@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Colab Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home_style.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <script src="src/CanvasController.js"></script>
+    <script src="src/Partical.js"></script>
+    <script src="src/Controller.js"></script>
+    <script src="src/main.js"></script>
+</head>
+<body>
+    <main>
+        <!-- nav bar -->
+        <div class="nav_container">
+            <div id="nav_logo">
+                <img  src="images/AraLogoLandscape.png" alt="Tech Colab image">
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#call_to_action_container">Contact</a></li>
+                    </ul>
+                </nav>                    
+            </div>
+        </div>
+
+        <!-- home section -->
+        <section>
+            <canvas id="home_canvas"></canvas>
+            <script src="src/canvas_art.js"></script>
+            <div id="home_container">
+                <h1>Ara Projects</h1>
+                <h2>Tech Colab & More</h2>
+                <div id="home_contents">
+                    <h2>something</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- search section -->
+        <section>
+            <div id="second_home_container">
+                <h1>search for a project</h1>
+                <div id="home_contents_2">
+                    <form action="javascript:getResult()">
+                        <label for="lname">What would you like to search for?</label><br>
+                        <input type="text" id="search" name="search">
+                        <input type="submit" value="Search">
+                    </form>
+                    <div class="initial_projects_list">
+                        <table>
+                            <tr onclick="location.href='project.html';">
+                                <th>project</th>
+                                <th>class</th>
+                                <th>date</th>
+                                <th>quick summary</th>
+                            </tr>
+                            <tr onclick="mouseDown()">
+                                <td>rfid</td>
+                                <td>tech colab</td>
+                                <td>2021</td>
+                                <td>rfid reader for recording and consilading race data</td>
+                                <td><a href="project.html">more...</a></td>
+                            </tr>
+                            <tr>
+                                <td>riverbridge</td>
+                                <td>tech colab</td>
+                                <td>2021</td>
+                                <td>website for getting tradies to get in contact with clients</td>
+                                <td><a href="project.html">more...</a></td>
+                            </tr>
+                            <tr>
+                                <td>space</td>
+                                <td>tech colab</td>
+                                <td>2021</td>
+                                <td>website for renting work spaces</td>
+                                <td><a href="project.html">more...</a></td>
+                            </tr>
+                            <tr>
+                                <td>tech colab website</td>
+                                <td>student project</td>
+                                <td>2021</td>
+                                <td>website to advertise tech colab and student projects</td>
+                                <td><a href="project.html">more...</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section>
+            <div id="home_about_container">
+                <h1>About Ara Projects</h1>
+                <div class="flex_this">
+                    <div class="container">
+                        <h2>Tech Colab</h2>
+                        <img class="about_images" id="about_image1" src="images/aboutPlaceholder1.jpg" alt="">
+                        <p class="container">'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',</p>
+
+                    </div>
+                    <div class="container">
+                        <h2>Capstone projects</h2>
+                        <img class="about_images" id="about_image2" src="images/capstone.PNG" alt="">
+                        <p class="container">Emerge celebrates the success of our degree and graduate diploma students in ICT. Come along and check out the exhibition showcasing their capstone projects.</p>
+                        <p>learn more at <a href="https://www.ara.ac.nz/news-and-events/news-stories/aras-july-emerge-event-attracts-a-wealth-of-attendees/">ara.ac.nz</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- call to action/contact -->
+        <section>
+            <div id="call_to_action_container">
+                <h1>Get In Contact now!</h1>
+                <div>
+                    <form id="contact_form" action="javascript:getResult()">
+                        <label for="email">Enter your email address:</label><br>
+                        <input type="text" id="email" name="email"><br>
+                        <label for="message">Enter your Message:</label><br>
+                        <textarea type="text" id="message" name="message"></textarea><br>
+                        <input type="submit" value="Send">
+                    </form>
+                    <p>or contact us directly by</p>
+                    <p>Phone: 022 467 3839</p>
+                    <p>email: ara</p>                    
+                </div>
+
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <h3>copyright</h3>
+        </footer>
+    </main>
+
+    <!-- javascript -->
+    <script>
+        var controller
+
+        function closeStudent(){
+            let cont = document.getElementById("student_info")
+            cont.innerHTML = ''
+        }
+
+        function displayStudent(student){
+            controller.displayStudent(student.innerText)
+        }        
+        
+        function run(){
+            controller = main()
+            console.log(controller)
+        }
+        document.onload = run()
+        controller.publish()
+
+        function mouseDown(){
+            controller.mouseDown()
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+Headers:
+Calibri Bold
+Calibri Bold Italic
+
+Arial Bold
+Arial Bold Italic
+Arial Black
+
+Plane text:
+Stag Sans Light
+Stag Sans Book
+Stag Sans Medium
+Stag Sans Semibold
+Stag Sans Bold
+Stag Sans Black
+
+
+Colors:
+12, 88, 110
+0, 106, 124
+0, 156, 173
+39, 189, 190
+80, 172, 200
+109, 200, 191
+193, 225, 193

@@ -1,0 +1,99 @@
+
+/* ...................RESET........................... */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, 
+tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    /* Cancel out some differences between browser defaults */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+html { 
+    scroll-behavior: smooth; 
+    font-family:'Times New Roman', Times, serif
+} 
+
+img{
+    height: 100%;
+}
+
+
+/* Positioning */
+.flex_this{
+    display: flex;
+}
+.always_flex{
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+}
+
+section{
+    min-height: 100vh;
+}
+
+#nav_logo{
+    height: 20px;
+}
+
+.nav_container{
+    background-color:rgb(12 88 110);
+    height: 3rem;
+    width: 100%;
+    padding: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+}
+
+nav > ul{
+    display: flex;
+}
+
+a:link {
+    margin: 0.5rem;
+}
+
+
+
+#home_canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 250vh;
+    width: 99vw;
+    background-image: linear-gradient(to right, rgb(12, 4, 26), rgb(34, 23, 65), rgb(78, 124, 223), rgb(6, 7, 29) );
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1300px;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+/* Responsiveness */
+@media only screen and (max-width: 900px) {
+    .flex_this {
+      flex-direction: column;
+    }
+
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About TC Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/about.css">
+    <script src="src/Controller.js"></script>
+    <script src="src/main.js"></script>
+</head>
+<body>
+    <main>
+        <div class="nav_container">
+            <div id="nav_logo">
+                <img  src="images/AraLogoLandscape.png" alt="Tech Colab image">
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html#call_to_action_container">Contact</a></li>
+                    </ul>
+                </nav>                    
+            </div>
+        </div>
+        <div id="about_app">
+            <h1>About</h1>
+            <p id="font1">Here is some text about tech colab</p>
+            <p id="font2">Here is some text about tech colab</p>
+            <p id="font3">Here is some text about tech colab</p>
+            <p id="font4">Here is some text about tech colab</p>
+            <p id="font5">Here is some text about tech colab</p>
+            <p id="font6">Here is some text about tech colab</p>
+            <p id="font7">Here is some text about tech colab</p>
+            <p id="font8">Here is some text about tech colab</p>
+            <p id="font9">Here is some text about tech colab</p>
+            <p id="font10">Here is some text about tech colab</p>
+            <p id="font11">Here is some text about tech colab</p>
+            <p id="font12">Here is some text about tech colab</p>
+            <p id="font13">Here is some text about tech colab</p>
+            <p id="font14">Here is some text about tech colab</p>
+            <p id="font15">Here is some text about tech colab</p>
+            <p id="font16">Here is some text about tech colab</p>
+            <p id="font17">Here is some text about tech colab</p>
+            <p id="font18">Here is some text about tech colab</p>
+            <p id="font19">Here is some text about tech colab</p>
+            <p id="font20">Here is some text about tech colab</p>
+        </div>
+    </main>
+    <!-- javascript -->
+    <script>
+        var controller
+  
+        function closeStudent(){
+            let cont = document.getElementById("student_info")
+            cont.innerHTML = ''
+        }
+  
+        function displayStudent(student){
+            controller.displayStudent(student.innerText)
+        }        
+            
+        function run(){
+            controller = main()
+            console.log(controller)
+        }
+        document.onload = run()
+        controller.publishAbout()
+    
+        function mouseDown(){
+            controller.mouseDown()
+        }
+    </script>
+    
+</body>
+</html>
