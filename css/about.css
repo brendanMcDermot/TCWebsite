@@ -1,0 +1,129 @@
+#about_app{
+    text-align: center;
+}
+
+html{
+    background-color: rgb(12, 88, 110);  
+}
+h2{
+    color: rgb(12, 88, 110);
+}
+
+h1{
+    color: white;
+    background-image: linear-gradient(to bottom right, rgb(39, 189, 190), rgb(25, 35, 175) );
+}
+
+#background_cont{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/araPlaceholder2.jpg");
+    background-color: rgb(12, 88, 110); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about_flex{
+
+    padding: 1rem;
+    margin: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+}
+
+#section1, #section2, #section3{
+    background-color: rgba(252, 252, 252, 0.95);
+    width: 33rem;
+    padding: 1rem;
+}
+
+#section1 > img{
+    float: right;
+    width: 10rem;
+    height: auto;
+}
+
+#section3 > img{
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+#section1{
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-left: rgb(12, 88, 110) solid 3px;
+    border-top: rgb(12, 88, 110) solid 3px;
+    border-bottom: rgb(12, 88, 110) solid 3px;
+    border-top-right-radius: 0;
+}
+#section2{
+    padding: 3rem 1rem 1rem;
+    border-top: rgb(12, 88, 110) solid 3px;
+    border-bottom: rgb(12, 88, 110) solid 3px;
+}
+#section3{
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-right: rgb(12, 88, 110) solid 3px;
+    border-top: rgb(12, 88, 110) solid 3px;
+    border-bottom: rgb(12, 88, 110) solid 3px;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 900px) {
+    #about_flex {
+      flex-direction: column;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    #section1, #section2, #section3{
+        background-color: rgba(252, 252, 252, 0.95);
+        width: 100%;
+        padding: 1rem;
+        border: none;
+    }
+
+    #section1 > img{
+        float: right;
+        width: 10rem;
+        height: auto;
+    }
+
+    #section3 > img{
+        padding: 1rem;
+        width: 100%;
+        height: auto;
+    }
+    #section1{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        border-left: rgb(12, 88, 110) solid 3px;
+        border-right: rgb(12, 88, 110) solid 3px;
+        border-top: rgb(12, 88, 110) solid 3px;
+    }
+    #section2{
+        border-left: rgb(12, 88, 110) solid 3px;
+        border-right: rgb(12, 88, 110) solid 3px;
+    }
+    #section3{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-right: rgb(12, 88, 110) solid 3px;
+        border-left: rgb(12, 88, 110) solid 3px;
+        border-bottom: rgb(12, 88, 110) solid 3px;
+    }
+
+}

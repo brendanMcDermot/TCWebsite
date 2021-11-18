@@ -1,0 +1,429 @@
+
+/* ...................RESET........................... */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, 
+tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    /* Cancel out some differences between browser defaults */
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+html { 
+    scroll-behavior: smooth; 
+    font-family:'Times New Roman', Times, serif
+}
+
+main {
+    margin:0;
+    width: 100%;
+}
+
+/* Typograpghy*/
+.white_text{
+    color: white;
+}
+
+.shadow_text{
+    text-shadow: 2px 2px rgb(12, 88, 110);
+}
+
+/* Positioning */
+.flex_this{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_this > div {
+    padding: 1rem;
+}
+
+.student_flex_items {
+    width: 50%;
+}
+
+.always_flex{
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#home_logo {
+    margin:8rem 5rem 4rem;
+    width: 35%;
+    height: auto;
+}
+
+
+.nav_container{
+    background-color:rgb(12 88 110);
+    height: 3rem;
+    width: 100%;
+    padding: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+}
+
+nav > ul{
+    display: flex;
+}
+
+a:link {
+    margin: 0.5rem;
+}
+
+header{
+    background: white;
+    z-index: 3;
+    position: sticky;
+    top:0;
+    left:0;
+}
+
+/*----------------------slider----------------------------*/
+.slider_project {
+    background-color: rgb(243, 240, 2143);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    min-height: 49vh;
+    min-width: 5rem;
+    max-width: 70vw;
+    max-height: 50vh;
+    overflow: auto;
+    border-top: rgb(52, 128, 150) solid 1px;
+    border-bottom: rgb(12, 88, 110) solid 3px;
+    border-left: rgb(52, 128, 150) solid 1px;
+    border-right: rgb(12, 88, 110) solid 3px;
+    border-radius: 25px;
+}
+
+.slider_project > h2{
+    border-bottom: rgb(12, 88, 110) solid 2px ;
+    border-style: double;
+    margin: 1rem;
+}
+.slider_img{
+    float: right;
+    margin:1rem;
+}
+
+.slider_img {
+    width: 15rem;
+}
+
+.float_more {
+    color: white;
+    text-align: center;
+    position:absolute;
+    top:40vh;
+    z-index: 2;
+    padding: 0.5rem;
+    width: 5rem;
+    float: bottom;
+    background-color: rgb(128 128 128);
+    border-radius: 25px;
+}
+
+.float_more > a {
+    color:white;
+}
+
+.float_more > a :hover{
+    color: rgb(200 250 200);
+}
+
+
+/*----------------------containers-------------------*/
+#second_home_container {
+    min-height: 100vh;
+    background-color: rgb(109, 200, 191);
+    padding:3rem;
+}
+
+.containers {
+    background-color: rgb(193, 225, 193);
+    margin: 0;
+    width: 100%;
+}
+
+.about_images {
+    max-width:80vw;
+}
+
+#home_form {
+    max-width: 400px;
+}
+
+#home_contents {
+    margin: 1rem 8rem;
+}
+
+/*about section*/
+#home_about_container {
+    min-height: 100vh;
+    color: rgb(12, 88, 110);
+    background-color: rgb(231, 235, 235);
+    min-height: 100vh;
+    padding: 5rem 4rem 4rem 1rem;
+    text-align: center;
+}
+
+.cta_container > img{
+    margin: 1rem;
+}
+
+.about_images {
+    width: 20rem;
+    height: 14rem;
+    border-radius: 50%;
+}
+
+/*contact*/
+#call_to_action_container {
+    color: white;
+    background-color: rgb(12, 88, 110);
+    min-height: 72vh;
+    padding: 5rem 4rem 4rem;
+}
+
+#contact_btn {
+    padding:0.3rem;
+    border-radius: 5px;
+    width: 120px;
+}
+
+#email, #message {
+    width: 40%;
+    min-width: 300px;
+}
+
+/*footer*/
+footer {
+
+    color: rgb(128, 128, 128);
+    background-color: rgb(50, 50, 50);
+}
+
+.crud_footer {
+    padding:0 2rem 15rem 2rem;
+}
+
+/* about page */
+#about_header {
+    text-align: center;
+}
+
+#about_page_container {
+    padding: 1rem 1rem 4rem;
+    background-color: linear-gradient(rgb(231, 235, 235), rgb(221, 225, 225));
+}
+
+#about_container {
+    padding: 2rem 3rem 15rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section1, #section2, #section3 {
+    padding:1rem 1rem 3rem;
+    border-bottom: rgb(12, 88, 110) solid 2px ;
+    border-style: double;
+    margin: 1rem;
+}
+
+#section1 > p, #section2 > p, #section3 > p {
+    padding: 1rem;
+}
+#section1 > h4, #section2 > h4, #section3 > h4 {
+    margin: 0rem 3rem 0rem;
+    color: rgb(12, 88, 110);
+    padding: 0.3rem 0.7rem;
+    border-bottom: rgb(193, 225, 193) solid 2px ;
+    width: fit-content;
+    
+}
+
+.about_img {
+    margin: 1rem;
+    max-width: 20rem;
+}
+
+#section1_img {
+    width:70%;
+    max-width:600px;
+    float: right;
+}
+
+#section2_img {
+    float: left;
+}
+
+#section3_img {
+    float: right;
+}
+
+/* projects page */
+
+#paragraph_container {
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: rgb(231, 235, 235);
+}
+
+.project_paragraph {
+    margin: 0.5rem;
+    padding: 1rem 2rem;
+    min-height: 10rem;
+}
+.project_paragraph > p{
+    margin: 1rem;
+}
+
+.project_paragraph_img {
+    margin: 0.5rem;
+    float: right;
+    max-width: 30em;
+    min-width: 15em;
+    max-height: 8rem;
+    border-radius: 5px;
+}
+
+#project_page_container {
+    margin-left:auto;
+    margin-right:auto;
+    background-color: white;
+    padding:1rem 4rem 15rem 4rem;
+    max-width: 1200px;
+}
+
+#Project_header{
+    text-align: center;
+}
+
+#project_summary {
+    color: white;
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgb(12, 88, 110), rgb(0, 156, 173));
+}
+
+#project_summary > ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#project_summary > ul > li {
+    padding: 0.2rem 1rem;
+    margin: 0.2rem 1rem;
+}
+
+#project_page_main_img {
+    margin: 2rem 1rem 1rem;
+    width: 27rem;
+    border-radius: 25px;
+
+}
+
+.student_link{
+    color: rgb(109, 200, 191);
+}
+.student_link:hover{
+    color: rgb(193, 225, 193);
+}
+
+.student_shown {
+    color: black;
+    margin:0.5rem;
+    display: none;
+    padding: 1.5rem;
+    background-color: rgb(213, 230, 213);
+    border-top: rgb(233, 255, 233) solid 1px;
+    border-bottom: rgb(163, 215, 163) solid 3px;
+    border-left: rgb(233, 255, 233) solid 1px;
+    border-right: rgb(163, 215, 163) solid 3px;
+    border-radius: 25px;
+}
+
+.student_img {
+    padding: 0.5em;
+    float:left;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10em;
+}
+
+.close_btn {
+    color:white;
+    float:right;
+    width:fit-content;
+    height:fit-content;
+    background-color:red;
+    border-radius: 5px;
+    padding:5px;
+}
+
+
+/* Responsiveness */
+@media only screen and (max-width: 900px) {
+    #project_page_container{
+        padding: 2rem;
+    }
+    .flex_this {
+      flex-direction: column;
+    }
+    #project_page_main_img {
+        width: 23em;
+        margin:1rem;
+    }
+    #about_container{
+        padding: 0rem;
+    }
+    #section1, #section2, #section3 {
+        padding: 0.1rem;
+        margin: 0.1rem;
+    }
+    .about_img {
+        margin: 1rem;
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #project_page_container{
+        padding: 0.2rem;
+    }
+    #project_page_main_img {
+        width: 15em;
+        margin:0.5rem;
+    }
+    #about_container{
+        padding: 0rem;
+    }
+    #section1, #section2, #section3 {
+        padding: 0.1rem;
+        margin: 0.1rem;
+    }
+    .about_img {
+        margin: 1rem;
+        width: 60%;
+    }
+}
