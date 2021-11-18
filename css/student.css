@@ -13,7 +13,7 @@ h4{
     max-width: 1000px;
 }
 
-#participant_list > ul > li:hover{
+#participant_list > ul > li:onHover{
     background-color: cadetblue;
 }
 
